@@ -426,8 +426,8 @@ Note down the value of `OutputValue` which is the Lambda@Edge function’s versi
 |CNameAlternateDomainName     | ui.mycompanydomain.com	    | CloudFront distribution alternate domain name that matches R53 domain name for your user interface.
 |LambdaEdgeVersionARN         | No default	                | ARN of Lambda@Edge function's version ARN to be used in CF distribution. Use value you noted for OutputValue above.
 |HostedZoneId                 | No Default                  | The ID of the Route 53 hosted zone you wish to add a RecordSet pointing to your CloudFront distribution URL, i.e. the distribution serving your user interface.
-|FargateResourceStack         | sftp-vpc-stack	            | Cross stack reference of the stack used to deploy the VPC resources. Use the name of the stack from VPC deployment section, step 3.
-|VPCResourceStack	          | sftp-fargate-stack          | Cross stack reference of the stack used to deploy the VPC resources. Use the name of the stack from Fargate deployment section, step 3.
+|FargateResourceStack         | sftp-fargate-stack	            | Cross stack reference of the stack used to deploy the Fargate resources. Use the name of the stack from Fargate deployment section, step 3.
+|VPCResourceStack	          | sftp-vpc-stack          | Cross stack reference of the stack used to deploy the VPC resources. Use the name of the stack from Fargate deployment section, step 3.
 
 6.	On the `Configure stack options` page choose Next,
 7.	On the `Review` page, review and confirm the settings. Be sure to check the box acknowledging that the template will 
